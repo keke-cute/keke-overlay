@@ -1,0 +1,5 @@
+* Usage:
+  #+begin_src shell
+    eselect repository add keke-overlay git git://github.com/keke-cute/keke-overlay.git
+    emaint sync -r keke-overlay
+  #+end_src
