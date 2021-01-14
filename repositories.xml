@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>keke-overlay</name>
+      <description lang="en">keke's Custom Gentoo Overlay.</description>
+        <homepage>https://github.com/my-name/my-overlay</homepage>
+        <owner type="person">
+            <name>keke</name>
+            <email>librek@protonmail.com</email>
+        </owner>
+        
+
+git://github.com/keke-cute/keke-overlay.git
+
+
+        <feed>https://github.com/keke-cute/keke-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
