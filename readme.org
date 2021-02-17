@@ -4,6 +4,11 @@
     emaint sync -r keke-overlay
   #+end_src
 * Install emacs with native-comp
+** add native use
+   /etc/portage/package.use/me
+   #+begin_src conf
+     app-editors/emacs ......... native
+   #+end_src
 ** accept git version
    /etc/portage/package.accept_keywords/emacs
    #+begin_src conf
