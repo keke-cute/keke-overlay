@@ -5,10 +5,10 @@ EAPI=6
 PYTHON_COMPAT=( python{3_7,3_8} )
 DISTUTILS_SINGLE_IMPL=1
 
-URELEASE="hirsute"
+URELEASE="groovy"
 inherit gnome2-utils distutils-r1 ubuntu-versionator
 
-UVER="-${PVR_MICRO}build${PVR_PL_MAJOR}"
+UVER="-${PVR_MICRO}"
 
 DESCRIPTION="Simple on-screen Keyboard with macros and easy layout creation"
 HOMEPAGE="https://launchpad.net/onboard"
@@ -17,7 +17,7 @@ SRC_URI="${UURL}/${MY_P}.orig.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
-#KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 # Let people emerge this by default, bug #472932
