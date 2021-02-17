@@ -3,3 +3,28 @@
     eselect repository add keke-overlay git git://github.com/keke-cute/keke-overlay.git
     emaint sync -r keke-overlay
   #+end_src
+* Install emacs with native-comp
+** accept git version
+   /etc/portage/package.accept_keywords/emacs
+   #+begin_src conf
+     app-editors/emacs **
+   #+end_src
+** env
+   /etc/portage/env/emacs.conf
+   #+begin_src conf
+     EGIT_OVERRIDE_REPO_EMACS="https://github.com/emacs-mirror/emacs.git"
+     EGIT_OVERRIDE_BRANCH_EMACS="feature/native-comp"
+   #+end_src
+   /etc/portage/package.env
+   #+begin_src conf
+     app-editors/emacs emacs.conf
+   #+end_src
+** now install
+   #+begin_src shell
+     sudo emerge --ask emacs
+   #+end_src
+** if you want choose commit
+   /etc/portage/env/emacs.conf
+   #+begin_src conf
+     EGIT_OVERRIDE_COMMIT_EMACS="..."
+   #+end_src
